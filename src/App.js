@@ -6,6 +6,7 @@ import Projects from './views/Projects';
 import Navbar from './components/Navbar';
 import ProjectsGames from './components/ProjectsGames';
 import ProjectsApps from './components/ProjectsApps';
+import ErrorPage from './views/ErrorPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="games" element={<ProjectsGames />} />
           <Route path="apps" element={<ProjectsApps />} />
       </Route>
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
     </div>
   );
